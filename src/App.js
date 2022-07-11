@@ -23,12 +23,16 @@ function App() {
 
   return (
     <div>
-      <input
-        value={keyword}
-        onChange={onChange}
-        type="text"
-        placeholder="Search here.."
-      />
+      <form>
+        <input
+          value={keyword}
+          onChange={onChange}
+          type="text"
+          placeholder="Write your to do.."
+        />
+        <button>Add To Do</button>
+      </form>
+
       <h1 className={styles.font}>Click : {count}</h1>
       <Button text={"Clike me!"} onClick={onClick} />
     </div>
