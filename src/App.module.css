@@ -2,3 +2,9 @@
   font-size: 25px;
   font-style: italic;
 }
+.container {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+}
+.item {
+}
