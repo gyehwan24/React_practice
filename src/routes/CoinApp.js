@@ -24,7 +24,7 @@ function CoinApp() {
   }, []);
   return (
     <div>
-      <h1>The Coins~! {loading ? "" : `(${coins.length})`}</h1>
+      <h1>The Coins! {loading ? "" : `(${coins.length} coins)`}</h1>
       <form onSubmit={onSubmit}>
         <input
           type="text"
@@ -45,7 +45,9 @@ function CoinApp() {
         </select>
       )}
       <hr />
-      {howManyCoin === "" && myMoney === "" ? "" : `${howManyCoin}개 구매 가능`}
+      {howManyCoin === "" && myMoney === ""
+        ? ""
+        : `You can buy ${Math.floor(howManyCoin)} coins.`}
     </div>
   );
 }
